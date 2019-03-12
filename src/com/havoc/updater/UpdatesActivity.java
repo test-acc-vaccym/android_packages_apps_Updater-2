@@ -409,7 +409,7 @@ public class UpdatesActivity extends UpdatesListActivity {
         dataWarning.setChecked(prefs.getBoolean(Constants.PREF_MOBILE_DATA_WARNING, true));
         abPerfMode.setChecked(prefs.getBoolean(Constants.PREF_AB_PERF_MODE, false));
 
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this, R.style.UpdaterAlertDialogStyle)
                 .setTitle(R.string.menu_preferences)
                 .setView(view)
                 .setOnDismissListener(dialogInterface -> {
